@@ -1,0 +1,40 @@
+{
+    "name": "base64pack",
+    "version": "0.0.1",
+    "description": "Base64 generator and packager for resources",
+    "main": "./pack.js",
+    "license": "MIT",
+    "bin": {
+	"waudbase64": "./main.js"
+    },
+    "scripts": {
+	"test": "echo \"no test specified\" && exit 0"
+    },
+    "repository": {
+	"type": "git",
+	"url": "https://github.com/adireddy/base64pack"
+    },
+    "bugs": {
+	"url": "https://github.com/adireddy/base64pack/issues"
+    },
+    "author": {
+	"name": "Adi Reddy Mora",
+	"email": "adiinteractive@gmail.com"
+    },
+    "keywords": [
+	"base64",
+	"bundle",
+	"pack",
+	"dataURI",
+	"assets",
+	"resources",
+	"images",
+	"audio"
+    ],
+    "dependencies": {
+	"winston": "~1.0.0",
+	"optimist": "~0.6.1",
+	"underscore": "~1.8.3",
+	"mkdirp": "~0.5.1"
+    }
+}
