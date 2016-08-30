@@ -8,6 +8,24 @@ Base64 generator and packager for resources
 npm install -g base64pack (coming soon)
 ```
 
+###Usage
+
+```
+base64pack -i assets -o assets.json
+```
+
+###Help
+
+```
+base64pack --help
+info: Options:
+  --input, -i              input folder                           
+  --output, -o             output JSON file (default: assets.json)
+  --preloader, -p          preloader folder                       
+  --prependBasePath, --pb  prepends base path to each asset id    
+  --help, -h               help
+```
+
 ### Licensing Information
 
 <a rel="license" href="http://opensource.org/licenses/MIT">

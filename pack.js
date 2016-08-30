@@ -1,7 +1,7 @@
-module.exports = function() {
-    var fs = require("fs");
-    var mkdirp = require('mkdirp');
+var fs = require("fs");
+var mkdirp = require('mkdirp');
 
+module.exports = function() {
     var opts = arguments[0];
     var callback = arguments[1];
     var inputFolder = opts.input;
@@ -33,8 +33,16 @@ module.exports = function() {
         "png": "image/png",
         "jpeg": "image/jpeg",
         "jpg": "image/jpeg",
+        "jpe": "image/jpeg",
+        "tif": "image/tiff",
+        "gif": "image/gif",
+        "tiff": "image/tiff",
+        "bmp": "image/bmp",
         "json": "text/plain",
-        "atlas": "text/plain"
+        "atlas": "text/plain",
+        "txt": "text/plain",
+        "text": "text/plain",
+        "xml": "text/xml"
     };
 
     if (/[\/\\]/.test(inputFolder.substring(inputFolder.length - 1, inputFolder.length))) inputFolder = inputFolder.substring(0, inputFolder.length - 1);
