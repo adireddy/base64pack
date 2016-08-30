@@ -5,7 +5,7 @@ Base64 generator and packager for resources
 ###Installation
 
 ```
-npm install -g base64pack (coming soon)
+npm install -g base64pack
 ```
 
 ###Usage

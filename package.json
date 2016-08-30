@@ -1,11 +1,11 @@
 {
     "name": "base64pack",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Base64 generator and packager for resources",
     "main": "./pack.js",
     "license": "MIT",
     "bin": {
-	"waudbase64": "./main.js"
+	"base64pack": "./main.js"
     },
     "scripts": {
 	"test": "echo \"no test specified\" && exit 0"
