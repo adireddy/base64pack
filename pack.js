@@ -54,16 +54,16 @@ module.exports = function() {
         list["meta"] = [count, size];
         mkdirp(outputFile.substring(0, outputFile.lastIndexOf("/")), function (err) {
             fs.writeFileSync(outputFile, JSON.stringify(list));
-        });
-    }
 
-    if (opts.preloader) {
-        list = { "meta": [0, 0] };
-        count = 0;
-        size = 0;
-        listFiles(preloaderFolder);
-        list["meta"] = [count, size];
-        fs.writeFileSync(outputFile.substring(0, outputFile.lastIndexOf(".")) + "-preloader.json", JSON.stringify(list));
+            if (opts.preloader) {
+                list = { "meta": [0, 0] };
+                count = 0;
+                size = 0;
+                listFiles(preloaderFolder);
+                list["meta"] = [count, size];
+                fs.writeFileSync(outputFile.substring(0, outputFile.lastIndexOf(".")) + "-preloader.json", JSON.stringify(list));
+            }
+        });
     }
 
     function listFiles(folder) {
